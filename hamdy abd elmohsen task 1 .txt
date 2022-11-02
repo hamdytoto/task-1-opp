@@ -1,0 +1,282 @@
+//the first problem 
+
+
+package com.mycompany.the_firstsheet;
+
+ import java.util.Scanner;
+
+
+/**
+ *
+ * @author Hamdy
+ */
+public class The_firstsheet {
+
+    public static void main(String[] args) {
+        
+        
+        Scanner scan =new Scanner(System.in );
+        System.out.println("enter the speed of the plane ");
+        double speed = scan.nextDouble();
+        System.out.println("enter the estimated length ");
+        double  length =scan.nextDouble();
+        
+        if(speed >=1100)
+        {
+            if(length<=52)
+            {
+                System.out.println("military");
+            }
+            else
+            {
+                System.out.println("civilien");
+            }
+        }
+        else 
+        {
+            System.out.println("aircraft unknown");
+        }
+  
+        
+    }
+}
+******************************************************************************************************************************************************
+//the second problem  
+
+package com.mycompany.the_firstsheet;
+ import java.util.Scanner;
+
+
+
+public class The_firstsheet {
+
+    public static void main(String[] args) {
+        
+        System.out.println("enter your brightness");
+        Scanner scan =new Scanner(System.in );
+        int bright =scan.nextInt();
+        int lifelong;
+        if (bright==25)
+        {
+            lifelong=2500;
+            
+        }
+        else if (bright==40||bright==60)
+        {
+            lifelong=1000;
+            
+        }
+        else if (bright==75||bright==100)
+        {
+            lifelong=750;
+        }
+        else 
+        {
+            lifelong=0;
+        }
+        
+        System.out.println("the life long is "+lifelong);
+        
+        
+    }
+}
+********************************************************************************************************************************************************
+//the third problem 
+package com.mycompany.the_firstsheet;
+ import java.util.Scanner;
+
+public class The_firstsheet {
+
+    public static void main(String[] args) {
+
+        Scanner scan =new Scanner(System.in );
+        double[]nums=new double[10];
+
+        // to initalize the ten number in an array 
+        
+        for(int x=0; x<10;x++)
+        {
+        System.out.println("enter a number "+ x+":");
+        
+        nums[x]=scan.nextDouble();
+       
+        }
+
+        // to calculate the sum 
+
+        double sum=0 ;
+        for(int i=0 ;i<10;i++)
+        {
+            sum=sum+nums[i];
+        }
+
+        //to calculate the average 
+
+        System.out.println("your average is " + sum/2);
+
+        //to calulate the max value 
+
+        double max = nums[0];
+        for (int k = 0; k < nums.length; k++) {
+            if (nums[k] > max) {
+                max = nums[k];
+            }
+        }
+
+        //to calulate the min value 
+
+        double min =nums[0];
+         for (int k = 0; k < nums.length; k++) {
+            if (nums[k] < min) {
+                min = nums[k];
+            }
+        }
+
+       
+        System.out.println("the max value is "+max);
+        System.out.println("the min value is "+min);
+        
+  
+        
+    }
+}
+*****************************************************************************************************************************************************
+// the fourth problem
+package com.mycompany.the_firstsheet;
+ import java.util.Scanner;
+
+/**
+ *
+ * @author Hamdy
+ */
+public class The_firstsheet {
+
+    public static void main(String[] args) {
+        Scanner scan =new Scanner(System.in );
+        System.out.println("enter the number of the value ");
+        int s=scan.nextInt();
+        if (s==0)
+        {
+            return;
+        }
+ 
+        double[]nums=new double[s];
+        // to initalize the ten number in an array 
+        for(int x=0; x<s;x++)
+        {
+        System.out.println("enter a number "+ x+":");
+        
+        nums[x]=scan.nextDouble();
+       
+        }
+        // to calculate the sum 
+        double sum=0 ;
+        for(int i=0 ;i<s;i++)
+        {
+            sum=sum+nums[i];
+        }
+        //to calculate the average 
+        System.out.println("your average is " + sum/2);
+        //to calulate the max value 
+        double max = nums[0];
+        for (int k = 0; k < nums.length; k++) {
+            if (nums[k] > max) {
+                max = nums[k];
+            }
+        }
+        //to calulate the min value 
+        double min =nums[0];
+         for (int k = 0; k < nums.length; k++) {
+            if (nums[k] < min) {
+                min = nums[k];
+            }
+        }
+
+       
+        System.out.println("the max value is "+max);
+        System.out.println("the min value is "+min);
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+}
+*****************************************************************************************************************************************************
+// the sixth problem
+package com.mycompany.the_firstsheet;
+ import java.util.Scanner;
+
+/**
+ *
+ * @author Hamdy
+ */
+public class The_firstsheet {
+
+    public static void main(String[] args) {
+        Scanner scan =new Scanner(System.in );
+        System.out.println("enter the first operand ");
+        int num1 =scan.nextInt();
+        System.out.println("enter the operation ");
+        char ch =scan.next().charAt(0);
+        
+        System.out.println("enter the second operand ");
+        int num2 =scan.nextInt();
+        if (ch=='+')
+        {
+            System.out.println("result is : "+ num1+num2);
+        }
+        else if (ch=='*')
+        {
+            System.out.println("result is : "+ num1*num2);
+        }
+        
+        else 
+        {
+            System.out.println("invaild ");
+        }
+        
+      
+        
+        
+        
+        
+    }
+}
+****************************************************************************************************************************************************************************************
+//the seventh problem
+package com.mycompany.the_firstsheet;
+ import java.util.Scanner;
+
+/**
+ *
+ * @author Hamdy
+ */
+public class The_firstsheet {
+
+    public static void main(String[] args)
+ {
+        Scanner scan =new Scanner(System.in );
+        System.out.println("enter the max value  ");
+        int num1 =scan.nextInt();
+        for(int x=1;x<=num1;x++)
+        {
+            System.out.println(x+"              "+x*x*x);
+            
+        }
+       
+       
+        
+        
+        
+        
+        
+        
+        
+    }
+}
+
+
